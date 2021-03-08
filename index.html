@@ -1,14 +1,23 @@
 <html>
+  <head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+  </head>
   <body>
-    <div id="example">
-      <p>{{ hello }}</p>
-    </div>
+      <div id="example">
+        <p>{{ hello }}</p>
+      </div>
+      <div id="chart"></div>
+
+      <footer>
+        <p>graphic source: <a href="https://codepen.io/gnykka/pen/yLVpyJb">https://codepen.io/gnykka/pen/yLVpyJb</a></p>
+      </footer>
     <script src="https://unpkg.com/vue"></script>
     <script>
-        new Vue({
-            el: '#example',
-            data: { hello: 'Hello World!' }
-        })
+      new Vue({
+        el: "#example",
+        data: { hello: "Hello World!" },
+      });
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
